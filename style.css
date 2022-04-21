@@ -118,7 +118,7 @@ video
 
 .text h2
 {
-  font-family: 'The Bold Font';
+  font-family: 'The Bold Font', sans-serif;
   font-size: 5em;
   font-weight: 800;
   color: #fff;
