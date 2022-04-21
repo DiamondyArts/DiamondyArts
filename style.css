@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'The Bold Font', sans-serif;
+  font-family: 'The-Bold-Font', sans-serif;
 }
 header
 {
@@ -118,7 +118,7 @@ video
 
 .text h2
 {
-  font-family: 'The Bold Font', sans-serif;
+  font-family: 'The-Bold-Font', sans-serif;
   font-size: 5em;
   font-weight: 800;
   color: #fff;
