@@ -118,6 +118,7 @@ video
 
 .text h2
 {
+  font-family: 'The Bold Font';
   font-size: 5em;
   font-weight: 800;
   color: #fff;
@@ -136,6 +137,7 @@ video
 }
 .text a
 {
+  font-family: 'MADE Outer Sans', sans-serif;
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -181,7 +183,7 @@ video
 .back{
 position: absolute;
 width: 100%;
-height: 418px;
+height: 100%;
 left: 0px;
 top: 590px;
 
