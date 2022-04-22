@@ -171,7 +171,6 @@ video
 {
   display: inline-block;
   margin-right: 20px;
-  filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
