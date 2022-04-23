@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/the-bold-font');
+@import url('http://fonts.cdnfonts.com/css/gogh');
 @import url('http://fonts.cdnfonts.com/css/made-outer-sans');
 
 *
@@ -114,18 +114,19 @@ video
 {
   position: relative;
   text-align: left;
+  top: -100px;
 }
 
 .text h2
 {
 
 width: 695px;
-height: 172px;
+height: 152px;
 
-font-family: 'The Bold Font';
+font-family: 'Gogh', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 170px;
+font-size: 150px;
 line-height: 170px;
 
 color: #FFFFFF;
@@ -169,6 +170,12 @@ text-decoration: underline;
 color: #FFFFFF;
 
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+}
+.text a:hover
+{
+ color: #688DF7;
 
 }
 #playlist
@@ -179,11 +186,15 @@ left: 100px;
 {
 left: 205px;
 }
+#extras
+{
+left: 385px;
+}
 .social
 {
   position: absolute;
   z-index: 10;
-  top: 120px;
+  top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,4 +249,57 @@ top: 350px;
 .recchars{
   position: relative;
   animation: 50s linear infinite;
+}
+.about iframe{
+position: absolute;
+left: 310px;
+top: 800px;
+border: 3px solid #418C13;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 18px;
+}
+.recchars{
+  top: 2000px;
+width: 98.9vw;
+height: 63vh;
+text-align:center;
+background: url(midia/recchars.png) repeat;
+-webkit-animation: backgroundScroll 9999999s linear infinite;
+animation: backgroundScroll 999999s linear infinite; /* Adjust timing here according to speed required */
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -99999999px 0;}
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -99999999px 0;}
+}
+.oqueeotom h6{
+position: absolute;
+width: 371px;
+height: 46px;
+left: 52px;
+top: 520px;
+
+font-family: 'Gogh', sans-serif;
+font-size: 48px;
+line-height: 48px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #FFFFFF;
+}
+.oqueeotom p{
+position: absolute;
+width: 724px;
+height: 167px;
+left: 50px;
+top: 594px;
+
+font-family: 'MADE Outer Sans';
+font-size: 22px;
+line-height: 28px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #FFFFFF;
 }
