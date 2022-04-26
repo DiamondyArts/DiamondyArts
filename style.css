@@ -1,12 +1,18 @@
-@import url('http://fonts.cdnfonts.com/css/the-bold-font');
-@import url('http://fonts.cdnfonts.com/css/made-outer-sans');
+@font-face {
+  font-family: 'The Bold Font';
+  src: url(midia/font/theboldfont.ttf);
+}
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url(midia/font/outersans.otf);
+}
 
 *
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'The-Bold-Font', sans-serif;
+  font-family: 'The Bold Font', sans-serif;
 }
 header
 {
@@ -110,6 +116,15 @@ video
   height: 100%;
   object-fit: cover;
 }
+.bg
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .text
 {
   position: relative;
@@ -118,7 +133,7 @@ video
 
 .text h2
 {
-  font-family: 'The-Bold-Font', sans-serif;
+  font-family: 'The Bold Font', sans-serif;
   font-size: 5em;
   font-weight: 800;
   color: #fff;

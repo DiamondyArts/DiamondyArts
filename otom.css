@@ -1,5 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/gogh');
-@import url('http://fonts.cdnfonts.com/css/made-outer-sans');
+@font-face {
+  font-family: 'The Bold Font';
+  src: url(midia/font/theboldfont.ttf);
+}
+@font-face {
+  font-family: 'MADE Outer Sans';
+  src: url(midia/font/outersans.otf);
+}
 
 *
 {
@@ -7,6 +13,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'The-Bold-Font', sans-serif;
+}
+body{
+  background: #90E0F6
 }
 header
 {
@@ -123,10 +132,10 @@ video
 width: 695px;
 height: 152px;
 
-font-family: 'Gogh', sans-serif;
+font-family: 'The Bold Font', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 150px;
+font-size: 160px;
 line-height: 170px;
 
 color: #FFFFFF;
@@ -284,7 +293,7 @@ height: 46px;
 left: 52px;
 top: 520px;
 
-font-family: 'Gogh', sans-serif;
+font-family: 'The Bold Font', sans-serif;
 font-size: 48px;
 line-height: 48px;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -300,6 +309,6 @@ top: 594px;
 font-family: 'MADE Outer Sans';
 font-size: 22px;
 line-height: 28px;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 color: #FFFFFF;
 }
