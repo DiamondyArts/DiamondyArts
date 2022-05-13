@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'The Bold Font', sans-serif;
 }
 header
 {
@@ -77,6 +76,7 @@ border: 3px solid #ffffff;
 #otombtn a{
     color: #5ABBFF;
     border: 3px solid #5ABBFF;
+    font-family: 'MADE Outer Sans', sans-serif;
 } 
 #otombtn a:hover 
 {
