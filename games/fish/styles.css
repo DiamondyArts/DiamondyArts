@@ -1,0 +1,277 @@
+  @font-face {
+    font-family: "chewie";
+    src: url(/games/fish/font/Chewie-Bold.otf);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "chewie";
+    list-style: none;
+    
+}
+
+nav{
+    display: flex;
+    position: sticky;
+    color: white;
+    background: black;
+    padding: 2px;
+}
+nav a{
+    color: white;
+}
+
+.fishclicker{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------- left ------------*/
+
+.left{
+    width: 30%;
+    background: url(/games/fish/midia/bgsand.png);
+    background-size: 80%;
+    height: 96.2vh;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 15px;
+    border-image: url(/games/fish/midia/border.png) 30 round;
+
+}
+.left h1{
+    padding: 3px;
+    background: url(/games/fish/midia/bgwood.png);
+    border-bottom: solid 3px #488C85;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+.aquarium{
+    height: 200px;
+    background: #52CCC8;
+    box-shadow: inset 0px 0px 42px 10px rgba(4, 23, 48, 0.31);
+}
+
+
+/*------------- main ------------*/
+
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(9,9,121,1) 0.4%, rgba(0,212,255,1) 52%);
+    height: 96.2vh;
+    width: 40%;
+    color: white;
+    box-shadow: inset 0px 0px 42px 10px rgba(7, 14, 74, 0.31);
+    overflow: hidden;
+}
+#counter{
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 50, 100, 0.9);
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+#fps{
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 50, 100, 0.9);
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background: url(/games/fish/midia/bgwood.png);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px 2px rgba(5, 20, 80, 0.28);
+    border-bottom: solid 3px #488C85;
+}
+header a{
+    margin: 5px;
+    font-size: 20px;
+    background: url(/games/fish/midia/button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: round;
+    padding: 5px;
+    padding-inline: 20px;
+    border: solid 1px #3F352E;
+    width: 95px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    transition: filter 0.2s;
+}
+header a:hover{
+    filter: contrast(1.5);
+    color: khaki;
+}
+.bigFish{
+    margin-top: 20px;
+    background-color: transparent;
+    background-image: url(/games/fish/midia/bigfish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    outline: none;
+    border: none;
+    width: 350px;
+    height: 250px;
+    transition: transform 0.2s;
+    filter: drop-shadow(0 3px 3px rgba(5, 20, 80, 0.3));
+}
+.bigFish:hover{
+    transform: scale(1.04);
+    filter: drop-shadow(0 5px 5px rgba(5, 20, 80, 0.3));
+}
+.bigFish:active{
+    transform: scale(0.95);
+}
+
+/*------------- right ------------*/
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background: url(/games/fish/midia/bgsand.png);
+    background-size: 80%;
+    height: 96.2vh;
+    width: 30%;
+    border-left: solid 15px;
+    border-image: url(/games/fish/midia/border.png) 30 round;
+}
+.right h1{
+    padding: 3px;
+    background: url(/games/fish/midia/bgwood.png);
+    border-bottom: solid 3px #488C85;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+#buildings{
+    display: flex;
+    flex-direction: column;
+}
+.building{
+    box-shadow: inset 0px 0px 10px 5px rgba(133, 105, 80, 0.3);
+    display: flex;
+    border: #4D8582;
+    border-right: solid 15px;
+    border-image: url(/games/fish/midia/border.png) 200 round;
+    text-align: start;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.building:hover{
+    background: rgba(255, 248, 189, 0.493);
+}
+.building:active{
+    background: rgba(255, 255, 255, 0.8);
+}
+.building h3{
+    font-size: 1.7rem;
+    margin: 5px;
+}
+.bicon{
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
+    margin: 5px;
+    scale: 70px;
+    background-repeat: no-repeat;
+    background-position-x: 220px;
+    background-size: 120px;
+}
+.btext{
+    display: flex;
+    flex-direction: column;
+}
+.btext p{
+    display: flex;
+    margin-right: 60px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #695954;
+}
+#bstats{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}
+
+/*------------- upgrades ------------*/
+
+
+#upgrades{
+    color: white;
+    margin-top: 60px;
+	text-align: center;
+    bottom: 0;
+}
+#upgrades h3{
+    position: absolute;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+.upgrade{
+    display: inline-block;
+    position: relative;
+    margin-inline: 4px;
+    width: 70px;
+    height: 70px;
+    background-size: 70px;
+    background: url(/games/fish/midia/bubble.png);
+    transition: transform 0.2s ease;
+}
+.upgrade:hover{
+    transform: scale(1.15);
+}
+
+
+/*------------- tools ------------*/
+
+
+.tool{
+display: flex;
+padding: 5px;
+
+}
+.tool-icon{
+    background: url(/games/fish/midia/float.png); 
+    width: 116px; 
+    height: 116px;
+    text-align: center;
+    transition: transform 0.4s;
+    transition: filter 0.2s;
+}
+.tool-icon img{
+    filter: drop-shadow(0 0 9px black);
+    transition: transform 0.4s ease;
+    transition: filter 0.2s ease;
+}
+.tool-icon img:hover{
+    filter: drop-shadow(0 0 11px black);
+    transform: scale(1.05);
+}
+.tool-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.tool-text p{ 
+    margin-top: 5px;
+    margin-left: 80px;
+    font-size: 1.1rem;
+    color: #695954;
+}
