@@ -6,19 +6,19 @@
         <meta name="description" content="Fish Clicker!" />
         <meta name="keywords" content="fish, fish clicker, clicker, cookie, cookie clicker, diamond, diamondy, diamondy arts, diamondy gaming, animations, graphic design, game" />
         <meta charset="utf-8" />
-        <link rel="icon" href="/games/fish/midia/fishclickericon.ico" type="image/vnd.microsoft.icon" />
+        <link rel="icon" href="/midia/favicon.ico" type="image/vnd.microsoft.icon"/>
         <link rel="license" href="http://creativecommons.org/licenses/by/3.0/" type="text/html" />
         <meta name="viewport" content="user-scalable = no, initial-scale = 1" /> 
-        <link rel="stylesheet" href="/games/fish/styles.css">    
-        <script src="/games/fish/script.js"></script>
+        <link rel="stylesheet" href="/styles.css">    
+        <script src="/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/erosson/swarm-numberformat@v0.1.0/dist/swarm-numberformat.min.js"></script>
     </head>
     <body onload="updatecount()">
 
     <nav>
-        <a>Fish Clicker™ © Diamondy, 2022 - www.</a>
-        <a href="https://www.diamondy.art.br"> diamondy.art</a>
+        <p>Fish Clicker™ © Diamondy, 2022 - </p>
+        <a href="https://www.diamondy.art.br"> www.diamondy.art.br</a>
     </nav>
 
 <div class="fishclicker">
@@ -29,7 +29,7 @@
         <div class="aquarium"></div>
 
         <div class="tool">
-            <div class="tool-icon"><img src="/games/fish/midia/fishingrod.png" height="116px"></div> 
+            <div class="tool-icon"><img src="/midia/fishingrod.png" height="116px"></div> 
 
             <div class="tool-text">
                 <h2>Rod</h2> 
@@ -49,21 +49,10 @@
         <h1 id="counter">0 fish</h1>
         <p id="fps">per second: 0</p>
 
-        <button class="bigFish" onclick="clicker.fish++; //a.play()"></button>
+        <button class="bigFish" onclick="clicker.fish+=defclick; //a.play(sfxClick)"></button>
+        <div class="shine"></div>
         <div id="upgrades">
-            <h3>upgrades</h3>
             <div class="upgraderow">
-                <div class="upgrade" id="bait-1"></div>
-                <div class="upgrade" id="bait-2"></div>
-                <div class="upgrade" id="bait-3"></div>
-                <div class="upgrade" id="bait-4"></div>
-                <div class="upgrade" id="bait-5"></div>
-                <div class="upgrade" id="bait-6"></div>
-                <div class="upgrade" id="bait-7"></div>
-                <div class="upgrade" id="bait-8"></div>
-                <div class="upgrade" id="bait-9"></div>
-                <div class="upgrade" id="bait-10"></div>
-                <div class="upgrade" id="bait-11"></div>
             </div>
         </div>
     </div>
@@ -81,3 +70,4 @@
 </div>
 </body>
 </html>
+
