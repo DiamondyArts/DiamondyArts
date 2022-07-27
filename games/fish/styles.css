@@ -1,6 +1,6 @@
-  @font-face {
+@font-face {
     font-family: "chewie";
-    src: url(/games/fish/font/Chewie-Bold.otf);
+    src: url(/font/Chewie-Bold.otf);
   }
 
 *{
@@ -10,16 +10,23 @@
     list-style: none;
     
 }
+body {
+    height: 100%;
+    background: #090A70;
+}
 
 nav{
     display: flex;
-    position: sticky;
     color: white;
     background: black;
     padding: 2px;
 }
-nav a{
+nav p{
     color: white;
+}
+nav a{
+    margin-left: 3px;
+    color: #688df7;
 }
 
 .fishclicker{
@@ -31,26 +38,28 @@ nav a{
 /*------------- left ------------*/
 
 .left{
+    z-index: 1;
     width: 30%;
-    background: url(/games/fish/midia/bgsand.png);
+    height: 100%;
+    background: url(/midia/bgsand.png);
     background-size: 80%;
     height: 96.2vh;
     display: flex;
     flex-direction: column;
     border-right: solid 15px;
-    border-image: url(/games/fish/midia/border.png) 30 round;
+    border-image: url(/midia/border.png) 30 round;
 
 }
 .left h1{
     padding: 3px;
-    background: url(/games/fish/midia/bgwood.png);
+    background: url(/midia/bgwood.png);
     border-bottom: solid 3px #488C85;
     color: white;
     text-align: center;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
 .aquarium{
-    height: 200px;
+    height: 30%;
     background: #52CCC8;
     box-shadow: inset 0px 0px 42px 10px rgba(4, 23, 48, 0.31);
 }
@@ -59,7 +68,7 @@ nav a{
 /*------------- main ------------*/
 
 .main{
-    
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +80,7 @@ nav a{
     overflow: hidden;
 }
 #counter{
+    z-index: 2;
     margin-top: 30px;
     text-align: center;
     text-shadow: 1px 1px 5px rgba(0, 50, 100, 0.9);
@@ -78,6 +88,7 @@ nav a{
     width: 100%;
 }
 #fps{
+    z-index: 2;
     text-align: center;
     text-shadow: 1px 1px 5px rgba(0, 50, 100, 0.9);
     background: rgba(0, 0, 0, 0.2);
@@ -85,17 +96,19 @@ nav a{
 }
 
 header{
+    z-index: 2;
     width: 100%;
-    background: url(/games/fish/midia/bgwood.png);
+    background: url(/midia/bgwood.png);
     color: white;
     padding: 10px;
     box-shadow: 0px 4px 6px 2px rgba(5, 20, 80, 0.28);
     border-bottom: solid 3px #488C85;
 }
 header a{
+    z-index: 2;
     margin: 5px;
     font-size: 20px;
-    background: url(/games/fish/midia/button.png);
+    background: url(/midia/button.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: round;
@@ -112,10 +125,38 @@ header a:hover{
     filter: contrast(1.5);
     color: khaki;
 }
+.shine {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    width: 500px;
+    height: 500px;
+    background: url(/midia/shine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+  }
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
 .bigFish{
+    z-index: 50;
     margin-top: 20px;
     background-color: transparent;
-    background-image: url(/games/fish/midia/bigfish.png);
+    background-image: url(/midia/bigfish.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -138,18 +179,19 @@ header a:hover{
 
 
 .right{
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    background: url(/games/fish/midia/bgsand.png);
+    background: url(/midia/bgsand.png);
     background-size: 80%;
     height: 96.2vh;
     width: 30%;
     border-left: solid 15px;
-    border-image: url(/games/fish/midia/border.png) 30 round;
+    border-image: url(/midia/border.png) 30 round;
 }
 .right h1{
     padding: 3px;
-    background: url(/games/fish/midia/bgwood.png);
+    background: url(/midia/bgwood.png);
     border-bottom: solid 3px #488C85;
     color: white;
     text-align: center;
@@ -161,11 +203,12 @@ header a:hover{
     flex-direction: column;
 }
 .building{
-    box-shadow: inset 0px 0px 10px 5px rgba(133, 105, 80, 0.3);
     display: flex;
+    flex-direction:row ;
+    box-shadow: inset 0px 0px 10px 5px rgba(133, 105, 80, 0.3);
     border: #4D8582;
     border-right: solid 15px;
-    border-image: url(/games/fish/midia/border.png) 200 round;
+    border-image: url(/midia/border.png) 200 round;
     text-align: start;
     background: transparent;
     cursor: pointer;
@@ -182,6 +225,8 @@ header a:hover{
     margin: 5px;
 }
 .bicon{
+    width: 70px;
+    aspect-ratio: 2;
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
     margin: 5px;
     scale: 70px;
@@ -189,53 +234,110 @@ header a:hover{
     background-position-x: 220px;
     background-size: 120px;
 }
-.btext{
+.bcontent{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
+.btext{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .btext p{
     display: flex;
-    margin-right: 60px;
     margin-left: 5px;
     margin-top: 20px;
     font-size: 1.1rem;
     color: #695954;
 }
-#bstats{
-    position: relative;
+.bstats{
+    width: 100%;
     display: flex;
     flex-direction: row;
     bottom: 0;
+    justify-content: space-between;
+}
+.bowned{
+    right: 0;
+    margin-right: 20px;
+}
+.bbuy{
+    display: flex;
+    right: 0;
+    color: white;
+    font-size: 14px;
+}
+#b10, #bmax{
+    background: url(/midia/button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: round;
+    width: min-content;
+    height: min-content;
+    border: solid 1px #3F352E;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    padding-inline: 8px;
+    margin-inline: 5px;
+    margin-top: 7px;
+    right: 0;
+    transition: background 0.2s;
 }
 
+#b10:hover {
+    filter: contrast(1.5);
+    color: khaki;
+}
+
+#bmax:hover {
+    filter: contrast(1.5);
+    color: khaki;
+}
 /*------------- upgrades ------------*/
 
 
 #upgrades{
+    z-index: 2;
+    height: 40%;
+    display: flex;
+    flex-direction: column-reverse;
     color: white;
     margin-top: 60px;
 	text-align: center;
     bottom: 0;
 }
 #upgrades h3{
+    left: 31%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     margin-top: -40px;
-    margin-left: 20px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
 .upgrade{
+    text-align: center;
     display: inline-block;
     position: relative;
     margin-inline: 4px;
     width: 70px;
     height: 70px;
     background-size: 70px;
-    background: url(/games/fish/midia/bubble.png);
+    background: url(/midia/bubble.png);
     transition: transform 0.2s ease;
+    border: none;
+}
+.upgrade img{
+    filter: drop-shadow(0 0 5px rgb(17, 4, 65));
 }
 .upgrade:hover{
     transform: scale(1.15);
+}
+.upgrade:active{
+    transform: scale(0.90);
 }
 
 
@@ -248,7 +350,8 @@ padding: 5px;
 
 }
 .tool-icon{
-    background: url(/games/fish/midia/float.png); 
+    aspect-ratio: 2;
+    background: url(midia/float.png); 
     width: 116px; 
     height: 116px;
     text-align: center;
