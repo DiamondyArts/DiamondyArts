@@ -67,7 +67,7 @@ var clicker = {
             multiplier: 2,
             name: "bait 1",
             id: 1,
-            icon: ('/midia/bait.png'),
+            icon: ('/games/fish/midia/bait.png'),
             description: "doubles bait's fish production.",
 
         },
@@ -79,7 +79,7 @@ var clicker = {
             multiplier: 2,
             name: "bait 2",
             id: 2,
-            icon: ('/midia/bait.png'),
+            icon: ('/games/fish/midia/bait.png'),
             description: "doubles bait's fish production.",
         },
         wormcan1:{
@@ -90,7 +90,7 @@ var clicker = {
             multiplier: "5% ",
             name: "can o' worms",
             id: 3,
-            icon: ('/midia/wormCan.png'),
+            icon: ('/games/fish/midia/wormCan.png'),
             description: "clicking gains 5% of total fps.",
         },
     },
@@ -129,7 +129,7 @@ function update_buildings(){
     document.querySelector("#buildings").innerHTML="";
     for(i in clicker.buildings){
         if(clicker.buildings[i].unlocked){
-        document.querySelector("#buildings").innerHTML+=`<button class="building" onclick="building_click('${i}')"><div class="bicon" style="background: url(midia/buildings.png); background-size: 1170px; background-position-x: ${clicker.buildings[i].icon}; width: 70px; height: 70px;"></div> <div class="bcontent"><div class="btext"><h3>${clicker.buildings[i].name}</h3> <br> <div class="bbuy"><div id="b10" onclick="buyten">10</div> <div id="bmax" onclick="buymax">max</div></div> </div> <div class="btext"><div class="bstats"><p class="buildingCost">${numberformat.format(clicker.buildings[i].cost)} fish</p> <br> <p class="bowned">${numberformat.format(clicker.buildings[i].amount)} owned.</p> </div></div></div> </button>`;
+        document.querySelector("#buildings").innerHTML+=`<button class="building" onclick="building_click('${i}')"><div class="bicon" style="background: url(/games/fish/midia/buildings.png); background-size: 1170px; background-position-x: ${clicker.buildings[i].icon}; width: 70px; height: 70px;"></div> <div class="bcontent"><div class="btext"><h3>${clicker.buildings[i].name}</h3> <br> <div class="bbuy"><div id="b10" onclick="buyten">10</div> <div id="bmax" onclick="buymax">max</div></div> </div> <div class="btext"><div class="bstats"><p class="buildingCost">${numberformat.format(clicker.buildings[i].cost)} fish</p> <br> <p class="bowned">${numberformat.format(clicker.buildings[i].amount)} owned.</p> </div></div></div> </button>`;
         totalpersecond += clicker.buildings[i].fps * clicker.buildings[i].amount;
         }
     };
@@ -193,9 +193,9 @@ function updatecount(){
 //faz um sfx de bolha, vê como faz musica de fundo tocar, etc
 
 var musIdle = null;
-var musAction = "./fish_music.mp3";
+var musAction = "/games/fish/fish_music.mp3";
 var sfxBubble = null;
-var sfxClick = "./fish.mp3";
+var sfxClick = "/games/fish/fish.mp3";
 var a = new Audio();
 
 
