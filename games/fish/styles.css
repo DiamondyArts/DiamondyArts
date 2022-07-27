@@ -1,6 +1,6 @@
 @font-face {
     font-family: "chewie";
-    src: url(/font/Chewie-Bold.otf);
+    src: url(games/fish/font/Chewie-Bold.otf);
   }
 
 *{
@@ -41,18 +41,18 @@ nav a{
     z-index: 1;
     width: 30%;
     height: 100%;
-    background: url(/midia/bgsand.png);
+    background: url(games/fish/midia/bgsand.png);
     background-size: 80%;
     height: 96.2vh;
     display: flex;
     flex-direction: column;
     border-right: solid 15px;
-    border-image: url(/midia/border.png) 30 round;
+    border-image: url(games/fish/midia/border.png) 30 round;
 
 }
 .left h1{
     padding: 3px;
-    background: url(/midia/bgwood.png);
+    background: url(games/fish/midia/bgwood.png);
     border-bottom: solid 3px #488C85;
     color: white;
     text-align: center;
@@ -98,7 +98,7 @@ nav a{
 header{
     z-index: 2;
     width: 100%;
-    background: url(/midia/bgwood.png);
+    background: url(games/fish/midia/bgwood.png);
     color: white;
     padding: 10px;
     box-shadow: 0px 4px 6px 2px rgba(5, 20, 80, 0.28);
@@ -108,7 +108,7 @@ header a{
     z-index: 2;
     margin: 5px;
     font-size: 20px;
-    background: url(/midia/button.png);
+    background: url(games/fish/midia/button.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: round;
@@ -131,7 +131,7 @@ header a:hover{
     top: 50px;
     width: 500px;
     height: 500px;
-    background: url(/midia/shine.png);
+    background: url(games/fish/midia/shine.png);
     background-repeat: no-repeat;
     background-size: contain;
     animation-name: spin;
@@ -156,7 +156,7 @@ header a:hover{
     z-index: 50;
     margin-top: 20px;
     background-color: transparent;
-    background-image: url(/midia/bigfish.png);
+    background-image: url(games/fish/midia/bigfish.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -182,16 +182,16 @@ header a:hover{
     z-index: 1;
     display: flex;
     flex-direction: column;
-    background: url(/midia/bgsand.png);
+    background: url(games/fish/midia/bgsand.png);
     background-size: 80%;
     height: 96.2vh;
     width: 30%;
     border-left: solid 15px;
-    border-image: url(/midia/border.png) 30 round;
+    border-image: url(games/fish/midia/border.png) 30 round;
 }
 .right h1{
     padding: 3px;
-    background: url(/midia/bgwood.png);
+    background: url(games/fish/midia/bgwood.png);
     border-bottom: solid 3px #488C85;
     color: white;
     text-align: center;
@@ -208,7 +208,7 @@ header a:hover{
     box-shadow: inset 0px 0px 10px 5px rgba(133, 105, 80, 0.3);
     border: #4D8582;
     border-right: solid 15px;
-    border-image: url(/midia/border.png) 200 round;
+    border-image: url(games/fish/midia/border.png) 200 round;
     text-align: start;
     background: transparent;
     cursor: pointer;
@@ -271,7 +271,7 @@ header a:hover{
     font-size: 14px;
 }
 #b10, #bmax{
-    background: url(/midia/button.png);
+    background: url(games/fish/midia/button.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: round;
@@ -326,7 +326,7 @@ header a:hover{
     width: 70px;
     height: 70px;
     background-size: 70px;
-    background: url(/midia/bubble.png);
+    background: url(games/fish/midia/bubble.png);
     transition: transform 0.2s ease;
     border: none;
 }
@@ -351,7 +351,7 @@ padding: 5px;
 }
 .tool-icon{
     aspect-ratio: 2;
-    background: url(midia/float.png); 
+    background: url(games/fish/midia/float.png); 
     width: 116px; 
     height: 116px;
     text-align: center;
