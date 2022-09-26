@@ -1,0 +1,176 @@
+:root{
+    --dyblue: #698DF7;
+    --dycharcoal: #435058;
+    --dycultured: #F1F2EE; 
+}
+@font-face {
+    font-family: 'OuterSans';
+    src: url(/media/fonts/MADE\ Outer\ Sans\ Regular.otf);
+}
+
+*{  
+    font-family: 'OuterSans';
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: var(--dycharcoal);
+}
+
+/* --------------------Main Page------------------ */
+
+#bg{
+top: 16vh;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+body{
+    background-color: var(--dycultured);
+}
+
+.nav{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 10vw 0;
+    color: var(--dycharcoal);
+    transition: all ease-out 0.2s;
+}
+    .nav a{
+        margin-inline: 3rem;
+    }
+    .nav p{
+        transition: all ease-out 0.1s;
+    }
+    .nav p:hover{
+        color: var(--dyblue);
+    }
+
+.main{
+    margin: 4vh 9vw 0;
+    transition: all ease-out 0.2s;
+}
+    .main h1{
+        color: var(--dyblue);
+        font-size: 5rem;
+    }
+
+.about{
+    display: flex;
+    align-items: center;
+    margin-inline: 2vw;
+}
+.about h2{
+    margin-left: 1vw;
+    margin-right: 3vw;
+}
+.socials{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+    .socials a{
+        margin-inline: 1vw;
+    }
+
+
+
+/* arrow */
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    width: max-content;
+    left: 1.5vw;
+    top: calc(100% + .25rem);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+.dropdown.active > #btn + .dropdown-menu{
+   opacity: 1; 
+   transform: translateY(0);
+   pointer-events: auto;
+}
+
+#btn{
+    width: 16px;
+    height: 25px;
+    background-image: url(/media/arrow.svg);
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 150ms ease-out;
+}
+.dropdown.active > #btn{
+    transform: rotate(90deg);
+}
+.dropdown-menu li{
+    transition: transform 150ms ease-in-out
+}
+.dropdown-menu li:hover{
+    transform: translateX(5px);
+}
+
+/* about me */
+
+.aboutme{
+    display: flex;
+    margin-top: 30vh;
+    margin-bottom: 40vh;
+    flex-direction: row;
+    margin-left: 20vw;
+}
+.image{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#portrait{
+    border-radius: 270px;
+    position: absolute;
+    z-index: 1;
+}
+/* star button */ 
+#starbtn{
+    aspect-ratio: 2 2;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    margin-right: -50px;
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 500ms ease;
+}
+#starbtn:active{
+    transform: rotate(360deg);
+}
+#text{
+    margin-left: 10vw;
+}
+    #text h1{
+        color: var(--dycharcoal);
+        font-size: 5rem;
+    }
+.redirect-btn{
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    padding-inline: 8px;
+    border: solid 3px var(--dyblue);
+    background-color: var(--dycultured);
+    color: var(--dyblue);
+    border-radius: 25px;
+    width: fit-content;
+}
+    .redirect-btn img{
+        margin-right: 4px;
+    }

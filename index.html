@@ -1,13 +1,24 @@
 <!doctype html>
 <html>
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-99Q4HJ6CVQ"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-99Q4HJ6CVQ');
+	</script>
+	<!-- head -->
 	<title>Diamondy.art</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
 	<meta name="description" content="a designer's website" />
 	<meta name="keywords" content="diamondy, otom, graffight, html, flash, diamond, goime, burger, diamondy arts, diamondy gaming, animations, graphic design, diamondeez" />
 	<meta charset="utf-8" />
-	<link rel="icon" href="midia/favicon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="icon" href="/media/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script src="/script.js" defer></script>
+	<!-- parity -->
 	<link rel="license" href="http://creativecommons.org/licenses/by/3.0/" type="text/html" />
-	<link rel="stylesheet" href="src/Sass/styles.css" type="text/css" />
 	<meta name="viewport" content="user-scalable = no, initial-scale = 1" /> 
 	<link rel="canonical" href="https://www.diamondy.art.br/" />
 	<meta property="og:image" content="https://diamondy.art.br/midia/embed.png" />
@@ -16,36 +27,63 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="showcase">
-    <header>
-	<div class="navbar"></div>
-	 <ul class="links">
-		<li class="headbtn"><a href="portfolio.html">portfolio</a></li>
-		<li class="headbtn"><a href="videos.html">videos</a></li>
-		<li class="headbtn"><a href="games.html">games</a></li>
-		<li class="headbtn" id="otombtn"><a href="otom.html">OTOM</a></li>
-	  </ul>
-      
-	  <li class="logo"><a href="index.html"><img src="midia/DYhome.png"></a></li>
-    </header>
 
-    <div class="text">
-      <h2>Diamondy.art </h2> 
-      <p>a designer's website</p>
-    </div>
-    <ul class="social">
-      <li><a href="https://www.youtube.com/c/diamondyy"><img src="midia/youtube.png"></a></li>
-      <li><a href="https://twitter.com/Diamondyeet"><img src="midia/twitter.png"></a></li>
-      <li><a href="https://www.instagram.com/diamondyarts/"><img src="midia/instagram.png"></a></li>
-    </ul>
-  </section>
-<img class="bg" src="midia/background.png"></img>
-<video src="orizrendervideo.webm" muted loop autoplay></video>
-	<section class="about">
-		
-		<div class="back"></div>
+	<img id="bg" src="media/bg.png">
+	<!-- nav bar -->
+	<nav class="nav">
+		<a href="#"><img src="/media/logo.svg" width="120px"></a>
+		<a href="#"><p>Home</p></a>
+		<a href="/portfolio.html"><p>Portfolio</p></a>
+		<a href="/games.html"><p translate="no">Games</p></a>
+		<a href="#"><p>Other</p></a>
+		<a href="/media/Résumé.pdf"><p>Résumé</p></a>
+	</nav>
+	<!-- title + subtitle -->
+	<div class="main">
+		<h1 translate="no">Diamondy.art</h1>
+		<div class="about">
 
-	</section>
- 
-</body>
-</html>
+			<div class="dropdown" data-dropdown>
+				<button id="btn" data-dropdown-button></button>
+				<div class="dropdown-menu">
+					<ul>
+						<li>graphic designer</li>
+						<li>typeface artist</li>
+						<li>web developer</li>
+						<li>content creator</li>
+						<li>animator</li>
+						<li>concept artist</li>
+						<li>game developer</li>
+						<li>enviroment artist</li>
+						<li>writer</li>
+					</ul>
+				</div>
+			</div>
+
+			<h2>Freelance Artist</h2>
+			<div class="socials">
+				<a href="https://www.youtube.com/c/Diamondyy"><img src="/media/youtube.svg"></a>
+				<a href="https://twitter.com/Diamondyeet"><img src="/media/twitter.svg"></a>
+				<a href="https://www.instagram.com/diamondyarts/"><img src="/media/instagram.svg"></a>
+				<a href="https://behance.net/diamondyarts"><img src="/media/behance.svg"></a>
+				<a href="https://www.linkedin.com/in/vitor-moura-140237232/"><img src="/media/linkedin.svg"></a>
+			</div>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="aboutme">
+		<div class="image">
+			<img id="portrait" src="/media/dom2.png" width="270vw">
+			<img id="starbtn" src="/media/star.svg">
+		</div>
+		<div id="text">
+			<h1>About me</h1>
+			<h2>My name is DOM.</h2>
+			<p>i started working as a freelance artist on<br>
+				the internet. now i'm learning about web dev<br>
+				and researching UX/UI.
+			</p>
+			<a href="#" class="redirect-btn"><img src="/media/arrow2.svg" width=" 15px">check my stuff out</a>
+		</div>
+	</div>
+</body> 
