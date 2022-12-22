@@ -1,0 +1,73 @@
+:root{
+    --mergedark: #201F46;
+    --mergenotthatdark: #23234B;
+    --mergetile: #53539F;
+    --mergebright: #9292FE; 
+    --mergeblack: #18183E;
+    --mergeblue: #2222BA;
+}
+@font-face {
+    font-family: 'OuterSans';
+    src: url(/media/fonts/MADE\ Outer\ Sans\ Regular.otf);
+}
+
+*{  
+    font-family: 'OuterSans';
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: var(--mergeblack);
+}
+
+/* --------------------Main Page------------------ */
+
+#bg{
+top: 16vh;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+body{
+    background-color: var(--mergetile);
+    background-attachment: fixed;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 20vw 0;
+    color: var(--dycharcoal);
+    transition: all ease-out 0.2s;
+}
+    .nav a{
+        margin-inline: 3rem;
+    }
+    .nav p{
+        transition: all ease-out 0.1s;
+    }
+    .nav p:hover{
+        color: var(--mergebright);
+    }
+
+#border {
+    background-color: var(--mergeblack);
+    border: 1px solid var(--mergeblack);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 0 auto;
+    padding: 5px;
+    width:1220px;
+    height:700px;
+}
+
+a{
+    color: var(--mergebright);
+}
